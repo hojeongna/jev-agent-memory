@@ -1,0 +1,43 @@
+[build-system]
+# 77+: SPDX `license` string and `license-files` (PEP 639)
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jev-agent-memory"
+version = "0.1.0"
+description = "No vector DB. A fast decision model routes and picks your agent's memory — episodic logs plus an evidence-backed user profile."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+dependencies = [
+    "tomli>=1.1; python_version < '3.11'",
+]
+keywords = ["claude-code", "agent", "memory", "hooks", "sqlite", "fts5"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Operating System :: POSIX",
+    "Operating System :: MacOS",
+]
+
+[project.urls]
+Homepage = "https://github.com/hojeongna/jev-agent-memory"
+Repository = "https://github.com/hojeongna/jev-agent-memory"
+Documentation = "https://github.com/hojeongna/jev-agent-memory/blob/main/README.md"
+Issues = "https://github.com/hojeongna/jev-agent-memory/issues"
+
+[project.scripts]
+jevmem = "jevmem.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+jevmem = ["data/*.json"]

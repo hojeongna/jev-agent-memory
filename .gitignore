@@ -1,0 +1,22 @@
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+# local data / secrets
+.jevmem/
+jevmem.toml
+.env
+*.sqlite
+*.jsonl
+!examples/*.jsonl
+.DS_Store
+# not published: private experiments and local agent data
+bench/
+memory/
+# local Claude Code settings (installed hooks contain absolute local paths)
+.claude/settings.json
+.claude/settings.local.json
+.claude/settings.json.bak-*

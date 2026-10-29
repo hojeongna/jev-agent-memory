@@ -1,0 +1,11 @@
+{"ts": "2026-09-09T21:20:00", "dir": "in", "channel": "telegram", "chat_id": "111", "message_id": "90", "user": "sam", "text": "can you move the weekly report reminder to thursday?"}
+{"ts": "2026-09-09T21:21:00", "dir": "out", "channel": "telegram", "chat_id": "111", "message_id": "91", "user": "Assistant", "text": "Done. The first Thursday reminder goes out on the 17th."}
+{"ts": "2026-09-10T08:50:00", "dir": "in", "channel": "telegram", "chat_id": "111", "message_id": "100", "user": "sam", "text": "why did the nightly backup fail?"}
+{"ts": "2026-09-10T08:52:00", "dir": "out", "channel": "telegram", "chat_id": "111", "message_id": "101", "user": "Assistant", "text": "The cron entry uses a relative path. Want me to switch it to an absolute path?"}
+{"ts": "2026-09-10T08:55:00", "dir": "out", "channel": "telegram", "chat_id": "111", "message_id": "", "user": "Assistant", "via": "script", "text": "Alert: backup volume disk usage 80%"}
+{"ts": "2026-09-10T09:01:00", "dir": "in", "channel": "telegram", "chat_id": "111", "message_id": "102", "user": "sam", "text": "yes do it"}
+{"ts": "2026-09-10T09:10:00", "dir": "out", "channel": "telegram", "chat_id": "111", "message_id": "103", "user": "Assistant", "text": "Switched the cron entry to /srv/backup/run.sh (absolute path). I'll check tomorrow's run."}
+{"ts": "2026-09-10T09:20:00", "dir": "in", "channel": "telegram", "chat_id": "222", "message_id": "104", "user": "dana", "text": "team dinner budget is 1,200"}
+{"ts": "2026-09-10T09:22:00", "dir": "in", "channel": "telegram", "chat_id": "222", "message_id": "105", "user": "lee", "text": "no, 1,500 for the venue"}
+{"ts": "2026-09-10T11:05:00", "dir": "in", "channel": "telegram", "chat_id": "111", "message_id": "106", "user": "sam", "text": "should we move the product demo to friday?"}
+{"ts": "2026-09-10T12:00:00", "dir": "in", "channel": "telegram", "chat_id": "111", "message_id": "107", "user": "sam", "text": "a later message outside every summary window"}

@@ -1,0 +1,153 @@
+{
+  "version": "example-1",
+  "note": "Generic starter taxonomy. 'labeling' (long descriptions) labels chunks at index time; 'routing' (short descriptions) routes each message. Topic and sub names must match exactly on both sides. Rename/restructure to fit YOUR logs, then run `jevmem index --relabel`.",
+  "smalltalk_topic": "smalltalk",
+  "labeling": {
+    "work": {
+      "desc": "The user's job: meetings, tasks and deadlines, coordination with colleagues or clients, status updates, planning documents, work email and chat.",
+      "sub": {
+        "meetings": "Meetings and calls: agendas, meeting notes, decisions made, action items, who attended, follow-ups after a meeting.",
+        "tasks-deadlines": "Assigned tasks, to-do lists, priorities, deadlines, estimates, what was finished or postponed at work.",
+        "communication": "Work messages and email: requests from colleagues or clients, replies drafted, announcements, notifications that needed action.",
+        "planning-docs": "Specs, requirements, proposals, reports, slide decks, roadmaps and other planning or reporting documents for work."
+      }
+    },
+    "coding": {
+      "desc": "Software development and tooling: writing code, debugging, code review, builds and deploys, developer tools, the agent's own scripts and automations.",
+      "sub": {
+        "bugs-debugging": "Errors, stack traces, failing tests, root-cause investigations and the fixes that resolved them.",
+        "code-review-deploy": "Pull requests, code review comments, merges, CI pipelines, releases and deployments.",
+        "tools-setup": "Developer environment and tools: editors, CLIs, package managers, config files, API keys setup, machine maintenance.",
+        "agent-automation": "The assistant's own scripts, hooks, scheduled jobs, memory system and automation rules: creating, fixing or tuning them."
+      }
+    },
+    "side-projects": {
+      "desc": "Personal projects outside the main job: product ideas, apps or games being built, content creation such as videos, blog posts or newsletters.",
+      "sub": {
+        "ideas": "New ideas and concepts: brainstorming, naming, pros and cons, whether an idea is worth pursuing.",
+        "building": "Hands-on progress on a personal project: features built, design decisions, prototypes, launches.",
+        "content": "Creating content: video scripts and edits, blog posts, social media posts, thumbnails, publishing schedules."
+      }
+    },
+    "learning": {
+      "desc": "Learning and research: books, courses, articles, papers, new technologies or skills the user is studying, notes and takeaways.",
+      "sub": {
+        "reading-courses": "Books, courses, tutorials, talks and videos consumed for learning, with notes and takeaways.",
+        "research": "Investigating a question in depth: comparing options, benchmarks, market or technical research, summaries of findings."
+      }
+    },
+    "health": {
+      "desc": "Physical and mental health: exercise, sleep, energy, diet, symptoms, doctor visits, medication, stress.",
+      "sub": {
+        "exercise-diet": "Workouts, running, walking, sports, meals, diet changes and weight.",
+        "sleep-energy": "Sleep quality, tiredness, energy levels, stress and mood over a day.",
+        "medical": "Symptoms, injuries, doctor or dentist visits, tests, medication and recovery."
+      }
+    },
+    "family-home": {
+      "desc": "Family, relationships and home life: family members, kids, partner, friends, household chores, errands, home plans and events.",
+      "sub": {
+        "family-friends": "Family members, children, partner, friends: their news, plans, conversations, caring for them.",
+        "home-errands": "Household chores, repairs, groceries, errands, moving, home setup.",
+        "events-plans": "Birthdays, holidays, gatherings, trips with family, reservations and schedules for personal events."
+      }
+    },
+    "hobbies-media": {
+      "desc": "Leisure: music, movies, series, games, sports watching, travel and outings, recommendations and personal taste.",
+      "sub": {
+        "music-video": "Music, playlists, concerts, movies, series, streaming, recommendations and opinions about them.",
+        "games": "Video games or board games played, progress, impressions.",
+        "travel-outings": "Travel, day trips, restaurants, cafes, places visited or planned."
+      }
+    },
+    "admin-money": {
+      "desc": "Personal admin and money: budget, bills, subscriptions, purchases, taxes, insurance, contracts, official paperwork and accounts.",
+      "sub": {
+        "finance": "Budget, savings, investments, bills, subscriptions and their costs, expense tracking.",
+        "purchases": "Things bought or considered: product comparisons, orders, deliveries, returns.",
+        "paperwork": "Taxes, insurance, contracts, government or bank paperwork, passwords and account administration."
+      }
+    },
+    "smalltalk": {
+      "desc": "Casual conversation that needs no past memory: greetings, thanks, short reactions, jokes, chit-chat, simple acknowledgements.",
+      "sub": {
+        "greetings-thanks": "Hello, good morning, good night, thanks, see you, simple acknowledgements like ok or got it.",
+        "chitchat": "Jokes, short reactions, casual remarks and small talk with no specific topic."
+      }
+    }
+  },
+  "routing": {
+    "work": {
+      "desc": "job, meetings, tasks, work docs",
+      "sub": {
+        "meetings": "meetings, calls, meeting notes",
+        "tasks-deadlines": "tasks, to-dos, deadlines",
+        "communication": "work email, messages, requests",
+        "planning-docs": "specs, reports, proposals, decks"
+      }
+    },
+    "coding": {
+      "desc": "code, tools, automation",
+      "sub": {
+        "bugs-debugging": "bugs, errors, debugging",
+        "code-review-deploy": "PRs, review, CI, deploy",
+        "tools-setup": "dev tools, environment, config",
+        "agent-automation": "assistant scripts, hooks, jobs, memory"
+      }
+    },
+    "side-projects": {
+      "desc": "personal projects, content",
+      "sub": {
+        "ideas": "new ideas, brainstorming",
+        "building": "building a personal project",
+        "content": "videos, posts, publishing"
+      }
+    },
+    "learning": {
+      "desc": "study, reading, research",
+      "sub": {
+        "reading-courses": "books, courses, tutorials",
+        "research": "research, comparisons, findings"
+      }
+    },
+    "health": {
+      "desc": "health, body, sleep",
+      "sub": {
+        "exercise-diet": "exercise, meals, diet",
+        "sleep-energy": "sleep, tiredness, stress",
+        "medical": "symptoms, doctor, medication"
+      }
+    },
+    "family-home": {
+      "desc": "family, friends, home",
+      "sub": {
+        "family-friends": "family, kids, partner, friends",
+        "home-errands": "chores, repairs, errands",
+        "events-plans": "birthdays, holidays, personal plans"
+      }
+    },
+    "hobbies-media": {
+      "desc": "leisure, media, travel",
+      "sub": {
+        "music-video": "music, movies, series",
+        "games": "games",
+        "travel-outings": "travel, restaurants, outings"
+      }
+    },
+    "admin-money": {
+      "desc": "money, purchases, paperwork",
+      "sub": {
+        "finance": "budget, bills, subscriptions",
+        "purchases": "shopping, orders",
+        "paperwork": "taxes, insurance, accounts"
+      }
+    },
+    "smalltalk": {
+      "desc": "casual chat, no memory needed",
+      "sub": {
+        "greetings-thanks": "greetings, thanks, ok",
+        "chitchat": "jokes, reactions, small talk"
+      }
+    }
+  }
+}

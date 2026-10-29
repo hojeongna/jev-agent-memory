@@ -1,0 +1,9 @@
+# Source distribution: the tests need their helper module and the example data to run.
+include README.ko.md
+include tests/helpers.py
+recursive-include tests *.py
+recursive-include examples *.md *.json *.jsonl
+recursive-include docs *.md
+prune bench
+prune memory
+global-exclude __pycache__ *.py[cod] *.sqlite .DS_Store
